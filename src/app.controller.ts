@@ -19,4 +19,9 @@ export class AppController {
   kimsijun(): string {
     return "I'm SiJun Kim.";
   }
+
+  @Get('/chain-partners')
+  chainpartners(): string {
+    return "I'm chainpartners.";
+  }
 }
