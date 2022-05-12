@@ -14,4 +14,9 @@ export class AppController {
   healthCheck(): string {
     return 'okk';
   }
+
+  @Get('/kimsijun')
+  kimsijun(): string {
+    return "I'm SiJun Kim.";
+  }
 }
