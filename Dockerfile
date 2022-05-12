@@ -1,13 +1,6 @@
 FROM node:16
 
-ENV TZ Asia/Seoul
-RUN	apk update && apk upgrade && \
-	apk add --update tzdata && \
-	cp /usr/share/zoneinfo/${TZ} /etc/localtime && \
-	echo "${TZ}" > /etc/timezone
-
 WORKDIR /usr/src/app
-
 COPY . .
 
 RUN rm -rf node_modules
@@ -15,5 +8,5 @@ RUN rm -rf node_modules
 RUN yarn
 RUN yarn build
 
-EXPOSE 80
+EXPOSE 3000
 CMD [ "yarn", "start" ]
