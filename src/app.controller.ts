@@ -12,7 +12,7 @@ export class AppController {
 
   @Get('/health-check')
   healthCheck(): string {
-    return 'okk';
+    return 'ok';
   }
 
   @Get('/kimsijun')
