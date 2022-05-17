@@ -24,6 +24,6 @@ export class AppController {
 
   @Get('/chain-partners')
   chainpartners(): string {
-    return "I'm chainpartners.";
+    return "I'm chainpartners!!!";
   }
 }
