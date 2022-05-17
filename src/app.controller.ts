@@ -20,6 +20,8 @@ export class AppController {
     return "I'm SiJun Kim.";
   }
 
+  //asd
+
   @Get('/chain-partners')
   chainpartners(): string {
     return "I'm chainpartners.";
